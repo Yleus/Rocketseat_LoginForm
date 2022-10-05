@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-image: url(/assets/side-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: #191816;
+    padding: 194px 74px;
+}
+
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.box-form {
+    width: 100%;
+    height: 100%;
+    background-color: #24221F;
+    border-radius: 4px;  
+    padding: 54px 118px;  
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;    
+}
+
+.title-form {
+    
+    position: relative;
+    right: 20px;
+    
+}
+
+.part1 {
+    display: flex;
+    
+}
+
+.part1 > img {
+    margin-right: 10px;
+}
+
+.part1 > p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    /* identical to box height */
+
+
+    color: #D4CCB6;
+}
+
+.part2 > p {    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    /* or 150% */
+
+
+    color: #AFB6C2;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;    
+    margin-top: 5px;
+}
+
+.form > label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+
+    color: #AFB6C2;
+
+    margin-top: 20px;
+}
+
+.form > .input1 {
+    width: 335px;
+    height: 44px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 14px 37px;
+
+    background-color: transparent;
+    background-image: url(/assets/mail.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 12px;
+
+    color: #AFB6C2;
+    
+}
+
+.form > .input1:focus {
+    border: 1px solid #FFC632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    background-image: url(/assets/mail-focus.svg);       
+}
+
+.form > .input2 {
+    width: 335px;
+    height: 44px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    margin-top: 5px;
+    padding: 14px 37px;
+
+    background-color: transparent;
+    background-image: url(/assets/lock.svg), url(/assets/eye.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: center, center;
+    background-position-x: 12px, 303px;
+
+    color: #AFB6C2;    
+    
+}
+
+.form > .input2:focus {
+    border: 1px solid #FFC632;
+    box-shadow: 0px 0px 0px 2px #FFDE88;
+    background-image: url(/assets/lock-focus.svg);   
+
+
+}
+
+.part3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    appearance: none;
+    
+    width: 20px;
+    height: 20px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+
+    cursor: pointer;
+    
+}
+
+.check:checked {    
+    content: url(/assets/check.svg);
+    background-color: #FFC632;
+}
+
+.check-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    /* identical to box height */
+
+
+    color: #A9AFB9;
+    margin-left: 5px;
+
+}
+
+.check-forgot {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    /* identical to box height */
+
+
+    color: #FFC632;
+}
+
+.btn {
+    cursor: pointer;
+    width: 334px;
+    height: 51px;
+    left: 193px;
+    top: 566px;
+
+    background: #FFC632;
+    border-radius: 4px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    /* identical to box height */
+
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+
+    color: #473404;
+
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.form > p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    /* identical to box height */
+
+
+    color: #FFC632;
+    align-self: center;
+}
+
+.form >p >a {
+    font-weight: 600;
+    color: #FFC632;
+}
+
+@media (max-width: 1375px) {
+    .left {
+        padding: 80px;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .title-form {
+    
+        
+        right: 90px;
+        
+    }
+
+    .part1 > p {       
+        font-size: 2rem;
+        line-height: 3rem;
+        /* identical to box height */   
+    
+    }
+    
+    .part2 > p {            
+        font-size: 1rem;
+        line-height: 2rem;   
+        
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .right {
+        display: none;
+    }
+    
+    .left {
+        width: 100%;
+        height: 100%;
+        background-color: #191816;
+        padding: 194px 74px;
+    }
+
+}
+
+@media (max-width: 570px) {
+    .left {        
+        padding: 0;
+    }
+
+    .box-form {
+        
+        background-color: #191816;        
+        
+    }
+
+    .form > .input1,
+    .form > .input2,
+    .form > label,
+    .part3 {
+        width: 100%;    
+        margin: 5 auto;     
+             
+        }
+
+    .btn {
+        width: 280px;
+    }
+
+    .title-form {
+        position: block;
+        right:0;
+        
+    }    
+
+    .box-form {
+         
+        padding: 0;  
+          
+    }
+
+    .part1 {
+        position: relative;
+        right: 25px;
+    }
+    
+    .part1 > img {
+        margin-right: 10px;
+    }
+    
+    .part1 > p {
+        
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+         
+    
+    }
+    
+    .part2 > p {    
+        
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+         
+      
+    }
+  
+    
+    
+}
